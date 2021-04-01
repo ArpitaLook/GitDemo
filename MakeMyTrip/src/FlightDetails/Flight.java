@@ -22,6 +22,6 @@ public class Flight {
 	  driver.findElement(By.xpath("//span[text()='Continue']")).click();
 	  driver.findElement(By.xpath("//input[@id='password']")).sendKeys("aqwsedrftgyhujikolp12#45");
 	  //driver.findElement(By.xpath("//input[@placeholder='From']")).click();
-	  
+	  System.out.Println("Made changes");
   }
 }
