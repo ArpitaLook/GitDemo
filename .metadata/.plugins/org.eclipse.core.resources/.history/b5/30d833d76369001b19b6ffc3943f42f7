@@ -1,0 +1,14 @@
+package customer;
+
+import org.openqa.selenium.By;
+import org.testng.annotations.Test;
+
+import testbase.TestBase;
+
+public class CreateCustomer extends TestBase {
+  @Test
+  public void createCustomer() {
+	  //System.out.println("Create Customer");
+	  driver.findElement(By.xpath("container_tasks")).click();
+  }
+}

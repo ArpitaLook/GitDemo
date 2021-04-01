@@ -1,0 +1,19 @@
+package user;
+
+import org.openqa.selenium.By;
+import org.testng.annotations.Test;
+
+import testbase.TestBase;
+
+public class CreateUser extends TestBase {
+  @Test
+  public void createUser() throws InterruptedException {
+	  driver.findElement(By.id("container_users")).click();
+	  driver.findElement(By.xpath("//div[text()='New User']")).click();
+	  Thread.sleep(3000);
+	  driver.findElement(By.xpath("(//input[contains(@id,'firstNameField')])[2]")).sendKeys("Arpita");
+	  driver.findElement(By.name("middleName")).sendKeys("C");
+	  driver.findElement(By.name("email")).sendKeys("lookarpu@gmail.com");
+	  driver.findElement(By.className("downIcon")).click();
+  }
+}

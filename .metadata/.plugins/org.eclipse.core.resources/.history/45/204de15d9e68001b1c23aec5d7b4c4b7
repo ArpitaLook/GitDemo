@@ -1,0 +1,9 @@
+package user;
+
+import org.testng.annotations.Test;
+
+public class createUser {
+  @Test
+  public void f() {
+  }
+}

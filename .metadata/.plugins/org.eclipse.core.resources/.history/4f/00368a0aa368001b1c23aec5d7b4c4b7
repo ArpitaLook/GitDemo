@@ -1,0 +1,13 @@
+package user;
+
+import org.openqa.selenium.By;
+import org.testng.annotations.Test;
+
+import testbase.TestBase;
+
+public class CreateUser extends TestBase {
+  @Test
+  public void createUser() {
+	  driver.findElement(By.id("container_users")).click();
+  }
+}

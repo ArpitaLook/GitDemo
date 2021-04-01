@@ -1,0 +1,9 @@
+package user;
+
+import org.testng.annotations.Test;
+
+public class deleteUser {
+  @Test
+  public void f() {
+  }
+}

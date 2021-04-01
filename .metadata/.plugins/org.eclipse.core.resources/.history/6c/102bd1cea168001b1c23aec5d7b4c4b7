@@ -1,0 +1,32 @@
+package testbase;
+
+import org.testng.annotations.Test;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.AfterClass;
+
+public class TestBase  {
+  
+  @BeforeMethod
+  public void login() {
+	  System.out.println("Login");
+  }
+
+  @AfterMethod
+  public void logout() {
+	  System.out.println("Logout");
+  }
+
+  @BeforeClass
+  public void openBrowser() {
+	  System.out.println("Open Browser");
+  }
+
+  @AfterClass
+  public void closeBrowser() {
+	  System.out.println("Close Browser");
+  }
+  
+
+}

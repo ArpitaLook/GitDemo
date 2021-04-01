@@ -1,0 +1,12 @@
+package user;
+
+import org.testng.annotations.Test;
+
+import testbase.TestBase;
+
+public class CreateUser extends TestBase {
+  @Test
+  public void createUser() {
+	  System.out.println("Create User");
+  }
+}
